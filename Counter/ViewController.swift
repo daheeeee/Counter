@@ -8,7 +8,7 @@
 
 import UIKit
 var count = 0
-
+var color = 0
 
 class ViewController: UIViewController {
     
@@ -31,7 +31,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BackC(_ sender: Any) {
-        view.backgroundColor = UIColor.cyan
+        if(color<1){
+            view.backgroundColor = UIColor.blue
+            color = color + 1
+        }else{
+            view.backgroundColor = UIColor.brown
+            color = color - 1
+        }
     
         
     }
