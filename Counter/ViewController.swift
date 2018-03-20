@@ -9,6 +9,7 @@
 import UIKit
 var count = 0
 
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -28,6 +29,14 @@ class ViewController: UIViewController {
         
         lab.text = "\(count)"
     }
+    
+    @IBAction func BackC(_ sender: Any) {
+        view.backgroundColor = UIColor.cyan
+    
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
