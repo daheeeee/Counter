@@ -31,15 +31,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BackC(_ sender: Any) {
-        if(color<1){
-            view.backgroundColor = UIColor.blue
+        if color == 0 {
+            self.view.backgroundColor = UIColor.gray
             color = color + 1
-        }else{
-            view.backgroundColor = UIColor.brown
+        }
+        else if color == 1 {
+            self.view.backgroundColor = UIColor.purple
             color = color - 1
         }
-    
-        
     }
     
     
